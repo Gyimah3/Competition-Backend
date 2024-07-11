@@ -46,7 +46,8 @@ app = FastAPI(
 # CORS configuration
 origins = [
     "https://hackathon-37g0uk0y2-gideon-gyimahs-projects.vercel.app", 
-    "https://hackathon-97icvvxb7-gideon-gyimahs-projects.vercel.app"# Replace with your actual frontend URL
+    "https://hackathon-97icvvxb7-gideon-gyimahs-projects.vercel.app"
+    "https://hackathon-bzxj6yoz3-gideon-gyimahs-projects.vercel.app" # Replace with your actual frontend URL
     "http://localhost:3000",  # If you are testing locally
 ]
 

@@ -55,7 +55,7 @@ origins = [
     "https://hackathon-37g0uk0y2-gideon-gyimahs-projects.vercel.app", 
     "https://hackathon-75vru3nwf-gideon-gyimahs-projects.vercel.app",
     "https://hackathon-qu1xdiq64-gideon-gyimahs-projects.vercel.app",
-    "https://hackathon-91xnvd7hy-gideon-gyimahs-projects.vercel.app",
+    "https://hackathon-81yt8ttc2-gideon-gyimahs-projects.vercel.app",
     "http://localhost:3000",
 ]
 

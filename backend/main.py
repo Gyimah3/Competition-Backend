@@ -17,11 +17,18 @@ from tools.functions_tools import create_chart_image
 setup_logging()
 logger = logging.getLogger("retail_insights")
 
+# class Input(BaseModel):
+#     input: str = Field(..., description="The retail insights query")
+#     tool_llm_name: str = Field(default=TOOL_LLM_NAME, description="LLM for SQL tools")
+#     agent_llm_name: str = Field(default=AGENT_LLM_NAME, description="LLM for the agent")
+#     chat_history: List[str] = Field(default=[], description="Chat history")
+
 class Input(BaseModel):
     input: str = Field(..., description="The retail insights query")
     tool_llm_name: str = Field(default=TOOL_LLM_NAME, description="LLM for SQL tools")
     agent_llm_name: str = Field(default=AGENT_LLM_NAME, description="LLM for the agent")
     chat_history: List[str] = Field(default=[], description="Chat history")
+
 
 class Output(BaseModel):
     output: Any = Field(..., description="The response from the Retail Insights Chatbot")

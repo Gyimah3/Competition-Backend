@@ -9,7 +9,7 @@ def get_chat_openai(model_name: str) -> ChatOpenAI:
     return ChatOpenAI(
         openai_api_key=OPENAI_API_KEY,
         model_name=model_name,
-        temperature=0,
+        temperature=0.2,
         max_tokens=3000,
         streaming=True,
         verbose=False,

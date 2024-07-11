@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+langchain
+langchain_community
+langchain_google_genai
+langchain_openai
+openai
+google-generativeai
+python-dotenv
+faiss-cpu
+pandas
+langserve
+pydantic==1.*
+matplotlib

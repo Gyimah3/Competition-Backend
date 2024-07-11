@@ -14,7 +14,7 @@ from .agent_constants import CUSTOM_SUFFIX
 logger = logging.getLogger(__name__)
 
 def get_sql_toolkit(tool_llm_name: str):
-    if tool_llm_name == "gpt-3.5-turbo-0125":
+    if tool_llm_name == "gpt-4o":
         llm_tool = get_chat_openai(model_name=tool_llm_name)
     elif tool_llm_name == "gemini-pro":
         llm_tool = get_chat_gemini(model_name=tool_llm_name)
@@ -24,7 +24,7 @@ def get_sql_toolkit(tool_llm_name: str):
     return SQLDatabaseToolkit(db=db, llm=llm_tool)
 
 def get_agent_llm(agent_llm_name: str):
-    if agent_llm_name == "gpt-3.5-turbo-0125":
+    if agent_llm_name == "gpt-4o":
         return get_chat_openai(model_name=agent_llm_name)
     elif agent_llm_name == "gemini-pro":
         return get_chat_gemini(model_name=agent_llm_name)
@@ -32,8 +32,8 @@ def get_agent_llm(agent_llm_name: str):
         raise ValueError(f"Unsupported agent LLM: {agent_llm_name}")
 
 def create_retail_agent(
-    tool_llm_name: str = "gpt-3.5-turbo-0125",
-    agent_llm_name: str = "gpt-3.5-turbo-0125",
+    tool_llm_name: str = "gpt-4o",
+    agent_llm_name: str = "gpt-4o",
     db_session: Any = None
 ):
     agent_tools = sql_agent_tools(db_session)

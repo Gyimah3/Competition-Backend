@@ -54,7 +54,7 @@ app = FastAPI(
 origins = [
     "https://hackathon-37g0uk0y2-gideon-gyimahs-projects.vercel.app", 
     "https://hackathon-75vru3nwf-gideon-gyimahs-projects.vercel.app",
-    "https://hackathon-97icvvxb7-gideon-gyimahs-projects.vercel.app",
+    "https://hackathon-qu1xdiq64-gideon-gyimahs-projects.vercel.app",
     "https://hackathon-bzxj6yoz3-gideon-gyimahs-projects.vercel.app",
     "http://localhost:3000",
 ]
